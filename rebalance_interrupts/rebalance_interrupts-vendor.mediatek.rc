@@ -3,6 +3,7 @@ service vendor.rebalance_interrupts-vendor-mediatek /vendor/bin/rebalance_interr
     oneshot
     user root
     group system
+    capabilities DAC_OVERRIDE
 
 on early-boot
     start vendor.rebalance_interrupts-vendor-mediatek
