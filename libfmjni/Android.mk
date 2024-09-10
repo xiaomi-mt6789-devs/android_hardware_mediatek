@@ -32,6 +32,7 @@ LOCAL_C_INCLUDES := \
     frameworks/base/include/media
 
 LOCAL_SHARED_LIBRARIES := \
+    libbase \
     libcutils \
     libdl \
     libmedia \
