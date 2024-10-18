@@ -1,0 +1,28 @@
+//
+// SPDX-FileCopyrightText: 2024 The LineageOS Project
+// SPDX-License-Identifier: Apache-2.0
+//
+
+soong_namespace {
+}
+
+cc_library_shared {
+    name: "libfmjni",
+
+    srcs: [
+        "fmr_core.cpp",
+        "fmr_err.cpp",
+        "libfm_jni.cpp",
+        "common.cpp",
+    ],
+    include_dirs: [
+        "frameworks/base/core/jni/include",
+    ],
+    shared_libs: [
+        "libbase",
+        "libcutils",
+        "libdl",
+        "libmedia",
+        "liblog",
+    ],
+}
